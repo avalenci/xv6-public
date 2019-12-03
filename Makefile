@@ -27,6 +27,32 @@ OBJS = \
 	uart.o\
 	vectors.o\
 	vm.o\
+	
+UPROGS=\
+        _cat\
+        _echo\
+        _forktest\
+        _grep\
+        _init\
+        _kill\
+        _ln\
+        _ls\
+        _mkdir\
+        _rm\
+        _sh\
+        _stressfs\
+        _usertests\
+        _wc\
+        _zombie\
+        _test_wcupa\
+
+EXTRA=\
+        mkfs.c ulib.c user.h cat.c echo.c forktest.c grep.c kill.c\
+        ln.c ls.c mkdir.c rm.c stressfs.c usertests.c wc.c zombie.c\
+        printf.c umalloc.c test_wcupa.c\
+        README dot-bochsrc *.pl toc.* runoff runoff1 runoff.list\
+        .gdbinit.tmpl gdbutil\
+
 
 # Cross-compiling (e.g., on Mac OS X)
 # TOOLPREFIX = i386-jos-elf
