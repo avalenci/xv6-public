@@ -14,6 +14,12 @@ sys_fork(void)
 }
 
 int
+sys_wcupa(void)
+{
+  return 1871;
+}
+
+int
 sys_exit(void)
 {
   exit();
