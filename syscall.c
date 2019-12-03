@@ -14,6 +14,9 @@
 // to a saved program counter, and then the first argument.
 
 // Fetch the int at addr from the current process.
+
+extern int sys_wcupa(void);
+
 int
 fetchint(uint addr, int *ip)
 {
@@ -128,8 +131,6 @@ static int (*syscalls[])(void) = {
 [SYS_close]   sys_close,
 [SYS_wcupa]   sys_wcupa,
 };
-
-extern int sys_wcupa(void);
 void
 syscall(void)
 {
