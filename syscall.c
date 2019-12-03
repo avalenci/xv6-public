@@ -129,6 +129,7 @@ static int (*syscalls[])(void) = {
 [SYS_wcupa]   sys_wcupa,
 };
 
+extern int sys_wcupa(void);
 void
 syscall(void)
 {
