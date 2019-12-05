@@ -15,8 +15,6 @@
 
 // Fetch the int at addr from the current process.
 
-extern int sys_wcupa(void);
-
 int
 fetchint(uint addr, int *ip)
 {
@@ -104,6 +102,7 @@ extern int sys_sbrk(void);
 extern int sys_sleep(void);
 extern int sys_unlink(void);
 extern int sys_wait(void);
+extern int sys_wcupa(void);
 extern int sys_write(void);
 extern int sys_uptime(void);
 
